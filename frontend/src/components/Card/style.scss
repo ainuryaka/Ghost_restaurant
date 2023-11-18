@@ -1,0 +1,123 @@
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 425px;
+    max-width: 425px;
+    max-height: 500px;
+
+    img {
+        width: 425px;
+        height: 300px;
+
+        object-fit: cover;
+        border: none;
+        border-radius: 8px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: min-content;
+
+            h3 {
+                overflow: hidden;
+                display: block;
+
+                width: fit-content;
+                max-width: 300px;
+                margin: 0;
+
+                font-size: 20px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: normal;
+                color: #1E1E1E;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            p {
+                overflow: hidden;
+                display: block;
+
+                max-width: 300px;
+                margin: 0;
+
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: normal;
+                color: #140F0E;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                &.ingredients {
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            span {
+                font-size: 20px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: normal;
+                color: #1E1E1E;
+            }
+
+            button {
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: max-content;
+                padding: 8px 16px;
+
+                font-size: 14px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: normal;
+                color: #1E1E1E;
+
+                background-color: #F2F2F2;
+                border: none;
+                border-radius: 8px;
+
+                transition: 100ms;
+
+                &.added {
+                    color: #fff;
+                    background: #A50000;
+
+                    &:hover {
+                        background: #7F0000;
+                    }
+                }
+
+                &:hover {
+                    color: #fff;
+                    background-color: #A50000;
+                }
+            }
+        }
+    }
+}
